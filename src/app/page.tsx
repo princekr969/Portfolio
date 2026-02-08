@@ -234,7 +234,7 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Interested in connecting? Send me an email or add me on LinkedIn—I'll get back to you as soon as possible.
+                Interested in connecting? Send me an email or add me on LinkedIn—I&apos;ll get back to you as soon as possible.
               </p>
             </div>
           <div className="flex items-center justify-center gap-4 text-[16px] font-semibold">
