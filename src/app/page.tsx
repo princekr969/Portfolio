@@ -174,7 +174,7 @@ export default function Page() {
             {DATA.skills.map((skill, id) => (
               <BlurFade key={skill.text} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                 <div className="px-2 rounded-md text-primary-foreground hover:cursor-pointer flex items-center justify-center border bg-background  hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50">
-                  <img src={`/skills/${skill.icons}`} alt={skill.text} className="w-6 h-6 inline-block" />
+                  <Image src={`/skills/${skill.icons}`} alt={skill.text} height={24} width={24} className="w-6 h-6 inline-block" />
                   <Badge className="bg-transparent hover:bg-transparent text-white text-lg" key={skill.text}>{skill.text}</Badge>
                 </div>
               </BlurFade>
