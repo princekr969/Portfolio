@@ -105,6 +105,41 @@ export const DATA = {
   ],
   projects: [
     {
+  title: "Code-Buddy",
+  href: "https://github.com/princekr969/Code-Buddy",
+  dates: "Feb 2026 - Feb 2026",
+  active: true,
+  description:
+    "Built a real-time collaborative code editor with live cursor tracking and instant sync using Yjs CRDT and Socket.IO. Integrated Monaco Editor with multi-file tab navigation and JDoodle API for 25+ language code execution with JWT auth and in-editor chat.",
+  technologies: [
+    "React",
+    "JavaScript",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Socket.IO",
+    "Yjs",
+    "Monaco Editor",
+    "JDoodle API",
+    "JWT",
+  ],
+  links: [
+    {
+      type: "Live",
+      href: "/",
+      icon: <Icons.external className="size-3" />,
+    },
+    {
+      type: "Source",
+      href: "https://github.com/princekr969/Code-Buddy",
+      icon: <Icons.github className="size-3" />,
+    },
+  ],
+  image: "/code-buddy.png",
+  video: "",
+},
+    {
       title: "Sangillence",
       href: "https://sangillence.com/", 
       dates: "Sept 2025 - Present",
@@ -138,7 +173,7 @@ export const DATA = {
       title: "EdTech Platform",
       href: "https://github.com/princekr969/Winter-Project-Edtech", 
       dates: "", 
-      active: true,
+      active: false,
       description:"Built a secure MERN-stack education platform with JWT/OAuth 2.0 auth, Cloudinary media handling, reusable React forms, and protected backend APIs (password hashing, CORS, cookies).",
       technologies: [
         "React",
