@@ -1,6 +1,7 @@
 "use client";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { CertificateCard } from "@/components/certificate-card";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Badge } from "@/components/ui/badge";
@@ -86,7 +87,7 @@ export default function Page() {
                     <HoverBorderGradient className="flex flex-row  items-center gap-3 py-1.5 text-[16px] md:text-[20px]">
                       <IoIosPaper className="size-5 fill-white text-gray-900" />
                       <a
-                        href="/resume.pdf"
+                        href="/Prince_Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -149,6 +150,28 @@ export default function Page() {
                 subtitle={education.degree}
                 period={`${education.start} - ${education.end}`}
                 description={education.details}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+      <section id="certificates">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl md:text-2xl font-bold">Certificates</h2>
+          </BlurFade>
+          {DATA.certificates.map((cert, id) => (
+            <BlurFade
+              key={cert.title}
+              delay={BLUR_FADE_DELAY * 9 + id * 0.05}
+            >
+              <CertificateCard
+                title={cert.title}
+                issuer={cert.issuer}
+                date={cert.date}
+                credentialUrl={cert.credentialUrl}
+                logoUrl={cert.logoUrl}
+                imageUrl={cert.imageUrl}
               />
             </BlurFade>
           ))}

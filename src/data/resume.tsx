@@ -9,7 +9,7 @@ export const DATA = {
   url: "",
   location: "Patna, India",
   description: "Capable of handling end-to-end fullstack projects and codebases.",
-  avatarUrl: "/avatar.jpg",
+  avatarUrl: "/photo.png",
   skills: [
     {text:"Next.js", icons: "nextjs.png"}, 
     {text:"Javascript", icons: "javascript.png"}, 
@@ -28,7 +28,7 @@ export const DATA = {
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }, 
   ],
   navbardocs:[
-    { href: "/resume.pdf", icon: FileText, newtab: true, label: "Resume" },
+    { href: "/Prince_Resume.pdf", icon: FileText, newtab: true, label: "Resume" },
     { href: "https://leetcode.com/u/pr0217291/", icon: SiLeetcode, newtab: true, label: "LeetCode" },
     { href: "#projects", icon: FolderGit2, newtab: false, label: "Projects" },
   ], 
@@ -59,6 +59,39 @@ export const DATA = {
 
   work: [
     {
+      company: "Software Developer (Summer Colloquium)",
+      href: "",
+      badges: [],
+      location: "ABV-IIITM Gwalior $|$ SLDC Odisha Project",
+      title: "Web Development Intern",
+      logoUrl: "",
+      start: "May 2026",
+      end: "Present",
+      description:[
+    // \resumeItem{Revamped the daily reporting module with \textbf{dynamic date-range selection}, eliminating hardcoded month/year constraints and cutting report generation friction for end users.}
+    // \resumeItem{Developed and integrated an \textbf{Hour-Ahead Load Forecasting model} into the \texttt{new\_prediction\_models} pipeline, extending real-time grid analytics with sub-hourly predictive capabilities.}
+        "Architected a centralized API abstraction layer for the SLDC Odisha frontend, decoupling data-fetching logic from UI components and reducing redundant service calls across 10+ modules.",
+        "Revamped the daily reporting module with dynamic date-range selection, eliminating hardcoded month/year constraints and cutting report generation friction for end users.",
+        "Developed and integrated an Hour-Ahead Load Forecasting model into the new_prediction_models pipeline, extending real-time grid analytics with sub-hourly predictive capabilities.",
+      ],
+      technologies: ["React", "Node.js", "Tailwind CSS", "PostgreSQL", "Postman"],
+    },
+    {
+      company: "Sangillence",
+      href: "",
+      badges: [],
+      location: "Remote",
+      title: "Tech-Lead",
+      logoUrl: "/sangillence.png",
+      start: "Oct 2025",
+      end: "March 2026",
+      description:[
+        "Created Sangillence to host an Open Book Olympiad, addressing rote learning limitations by building a React-based platform with interactive 3D content that evaluates application-based skills over memorization.",
+        "Designed and implemented Olympiad student registration and on-site identity verification systems, including secure form authentication and live photo capture for participant validation.",
+      ],
+      technologies: ["React", "JavaScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Apps script"],
+    },
+    {
       company: "Bluestock Fintech",
       href: "",
       badges: [],
@@ -76,21 +109,7 @@ export const DATA = {
       ],
       technologies: ["React", "Node.js", "Tailwind CSS", "PostgreSQL", "Bootstrap", "Figma", "Postman"],
     },
-    {
-      company: "Sangillence",
-      href: "",
-      badges: [],
-      location: "Remote",
-      title: "Tech-Lead",
-      logoUrl: "/sangillence.png",
-      start: "Sept 2025",
-      end: "Present",
-      description:[
-        "Created Sangillence to host an Open Book Olympiad, addressing rote learning limitations by building a React-based platform with interactive 3D content that evaluates application-based skills over memorization.",
-        "Designed and implemented Olympiad student registration and on-site identity verification systems, including secure form authentication and live photo capture for participant validation.",
-      ],
-      technologies: ["React", "JavaScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Apps script"],
-    }
+    
   ],
   education: [
     {
@@ -101,6 +120,16 @@ export const DATA = {
       logoUrl: "/iiitm-logo.jpg", 
       start: "Aug 2023",
       end: "Present",
+    },
+  ],
+  certificates: [
+    {
+      title: "Dynamic Programming Camp",
+      issuer: "AlgoUniversity",
+      date: "",
+      credentialUrl: "",
+      logoUrl: "/algouniversity.png",
+      imageUrl: "/dp-camp-cert.png",
     },
   ],
   projects: [

@@ -33,7 +33,7 @@ export const ResumeCard = ({
   bulletPoints,
   technologies
 }: ResumeCardProps) => {
-  const [isExpanded, setIsExpanded] = React.useState(false); // Start collapsed by default
+  const [isExpanded, setIsExpanded] = React.useState(true); // Start collapsed by default
   
   // Determine if the card is expandable
   const isExpandable = !!(description || bulletPoints || technologies);
